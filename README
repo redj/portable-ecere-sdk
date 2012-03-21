@@ -42,6 +42,10 @@ relative to the current location of the portable binaries.
 
  * DETAILS *
 
+The Portable Ecere SDK is only available for Windows right now. A Linux
+version should be possible. Please contact the Ecere community if your are
+interested in hacking any other version of the Ecere SDK.
+
 The Portable Ecere SDK is built from the exact same source code as the Ecere
 SDK itself. The binaries provided are identical to the ones that would be
 copied onto your machine if you used the official Ecere SDK installer.
@@ -59,7 +63,7 @@ limited. Please help us with the translation effort.
 The packages for the different flavors of the Portable Ecere SDK are
 assembled from a github.com repository.
 
-   https://github.com/redj/portable-sdk-win
+   https://github.com/redj/portable-sdk
 
 We propose that to be qualified as portable an application should follow
 these simple rules.
