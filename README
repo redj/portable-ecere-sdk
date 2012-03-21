@@ -27,6 +27,11 @@ of MinGW is included.
 "All In One" adds many samples and the source code for Ecere SDK on top of
 the "MinGW C++" flavor.
 
+ * DOWNLOAD
+
+   http://code.google.com/p/ecere/downloads/list
+
+
  * USAGE *
 
 You can run the ide and documentor using ide.bat and documentor.bat
