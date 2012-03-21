@@ -1,0 +1,34 @@
+
+# Ecere non-source files
+*.ews
+*.Makefile
+*.imp
+*.sym
+*.main.ec
+*.bowl
+
+# Intermediate dirs
+obj/
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.bz2
+
+# Logs and databases
+*.log
+*.sql
+*.sqlcipher
+*.search
+
+# OS generated files
+.DS_Store
+ehthumbs.db
+Icon
+Thumbs.db
