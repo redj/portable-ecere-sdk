@@ -1,0 +1,9 @@
+[submodule "apps/chess"]
+	path = apps/chess
+	url = git://github.com/redj/chess.git
+[submodule "apps/fractals"]
+	path = apps/fractals
+	url = git://github.com/redj/fractals.git
+[submodule "sdk"]
+	path = sdk
+	url = git://github.com/redj/sdk.git
