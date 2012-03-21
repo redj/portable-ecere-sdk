@@ -1,0 +1,94 @@
+The Ecere SDK v0.44 - http://ecere.com
+
+Free Open Source Software released under the New BSD license.
+
+The Ecere SDK is a Software Development Kit including:
+
+   * A set of compiling tools for the eC programming language
+                               ( http://www.ecere.com/technologies.html#eC )
+
+   * An Integrated Development Environment, with the usual features such as:
+      - A source code editor with auto-completion, syntax highlighting
+      - Management of application and library projects
+      - A visual debugger
+      - A Rapid Application Development form designer, based on
+        properties & methods 
+
+   * A run time library, providing a uniform API across platforms, featuring:
+      - A GUI toolkit (with a vast collection of powerful controls:
+        Buttons, Edit boxes, Drop/Combo boxes, Menus, Tabs,
+        Tree views/Grids/List boxes, file dialogs, ...)
+      - A 2D graphics API (bitmaps, fonts, international text, basic drawing)
+      - A 3D graphics API, supporting both Direct3D and OpenGL
+        (3DS file format support)
+      - A networking API which provide Sockets as well as a
+        distributed objects system for eC
+      - System functionality such as file access, multi-threading &
+        synchronization, handling date & time, etc.
+
+   * Additional libraries and code for more features, such as:
+      - The Ecere Data Access (EDA) layer, an abstract relational database
+        API, providing an active record system for eC. Currently it has
+        drivers for a minimal Ecere RDBMS and SQLite (as well as an encrypted
+        version using SQLiteCipher), and recently a basic Oracle driver was
+        introduced
+      - An audio library (supporting DirectSound on Windows and ALSA on Linux)
+      - WIA Scanning support on Windows
+      - SSL Sockets suport through OpenSSL
+      - A 2D tiled based game graphics engine (Tiled map, Sprites, A*)
+
+-----------------------------------------------------------------------------
+
+ * INSTALLATION *
+
+Please refer to the latest instructions at http://ecere.com/wiki/
+Windows binaries are available from that page.
+
+Daily-built Ubuntu Debian packages are available from our Ubuntu PPA:
+
+   https://code.launchpad.net/~ecere-team/+archive/ppa
+
+To build from source, simply type make (mingw32-make on Windows).
+
+It should build fine on Linux, on Windows with MinGW,
+and on Mac OS X with a bit of luck.
+
+To install, type make install (mingw32-make install on Windows).
+
+Please note that at this time eC and the Ecere SDK only support 32 bit.
+However, you should still be able to use the 32 bit version on a 64 bit machine.
+64-bit support is planned for the future.
+
+ * DOCUMENTATION *
+
+The Ecere Tao of Programming is a Programmer's Guide (still work in progress)
+that will teach you the foundations of eC and Ecere. You will find it under:
+
+Online: http://ecere.com/tao.pdf
+On Windows:
+      %PROGRAMFILES%\Ecere SDK\doc\Ecere Tao of Programming [work in progress].pdf
+On Linux/Unix: /usr/share/doc/tao.pdf
+
+Please check out the samples that come with the SDK:
+
+On Windows they get installed in %APPDATA%\Ecere SDK\Samples
+On Linux/Unix they get installed in /usr/share/ecere/samples/
+You can also find the latest versions on GitHub:
+
+   http://github.com/ecere/sdk/tree/master/samples
+   http://github.com/ecere/fractals
+   http://github.com/ecere/chess
+
+The Documentor is a tool under development to browse and document the APIs of
+eC modules. You can use it to browse all available classes, methods and properties
+of the Ecere runtime library. It is available from the Help menu in the IDE (F1).
+However, at the moment the tool itself is being improved, and so not much 
+descriptive info has been added yet.
+
+ * COMMUNITY *
+
+Git Repository @ http://github.com/ecere/sdk/  ( git://github.com/ecere/sdk.git )
+Support forums @ http://ecere.com/forums
+Bug tracker    @ http://ecere.com/mantis
+IRC            @ #ecere on irc.freenode.net
+                ( http://webchat.freenode.net/?channels=ecere )
