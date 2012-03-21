@@ -1,0 +1,173 @@
+
+This is the portable version of Ecere SDK
+
+ * FLAVORS *
+
+The Portable Ecere SDK comes in 4 flavors:
+
+   * "Core"
+   * "MinGW"
+   * "MinGW C++"
+   * "All In One"
+
+"Core" is the bare minimum. It contains only the Ecere SDK and it's little
+documentation. Use it only if you have your own compiler installation.
+For example, if you already have MinGW installed on the machine or machines
+where you plan to use the Portable Ecere SDK. Be aware that different
+versions of the MinGW components might create problems.
+
+"MinGW" adds MinGW (make, binutils, gcc and gdb) and upx to "Core". This is
+provinding you with a complete compiler and toolchain out of the box. This
+includes the debugger for working out bugs in your projects. You won't have
+to rely on a local installtion of a compiler. Note that only the C compiler
+of MinGW is included.
+
+"MinGW C++" simply adds MinGW's C++ compiler to the "MinGW" flavor.
+
+"All In One" adds many samples and the source code for Ecere SDK on top of
+the "MinGW C++" flavor.
+
+ * USAGE *
+
+You can run the ide and documentor using ide.bat and documentor.bat
+respectively. You can do this at the command prompt or in your file manager.
+If you want to build your project from the command prompt or just play with
+the compiler, you can use console.bat for that purpose. It will setup the
+search paths necessary to do so. Note that when simply using the IDE, the
+compiler configuration takes care of that.
+
+The packages for each flavor provide a "home" folder where you may keep your
+projects but the ide will track the paths to your projects and other files
+relative to the current location of the portable binaries.
+
+ * DETAILS *
+
+The Portable Ecere SDK is built from the exact same source code as the Ecere
+SDK itself. The binaries provided are identical to the ones that would be
+copied onto your machine if you used the official Ecere SDK installer.
+
+What makes the SDK behave as portable is the fact that the configuration
+file is present in the same directory as the binaries.
+
+All flavors contain all available internationalization files so you may want
+to set the LANGUAGE environment variable to use the Ecere SDK and MinGW in
+your prefered language. Note that you may find the i18n of Ecere SDK to be
+limited. Please help us with the translation effort.
+
+   https://translations.launchpad.net/ecere
+
+The packages for the different flavors of the Portable Ecere SDK are
+assembled from a github.com repository.
+
+   https://github.com/redj/portable-sdk-win
+
+We propose that to be qualified as portable an application should follow
+these simple rules.
+
+   * be packaged as a simple zip (or other compression format) archive
+   * don't require an installer, simply extract archive to desired location
+   * don't "pollute" the system with configuration
+   * enable transportation of the installation
+     (on a usb key for example that may change drive letter from use to use)
+   * gracefuly handle transportation with relative paths when possible
+
+-----------------------------------------------------------------------------
+
+The rest of this file is an exact copy of the official Ecere SDK README.
+
+-----------------------------------------------------------------------------
+
+The Ecere SDK v0.44 - http://ecere.com
+
+Free Open Source Software released under the New BSD license.
+
+The Ecere SDK is a Software Development Kit including:
+
+   * A set of compiling tools for the eC programming language
+                               ( http://www.ecere.com/technologies.html#eC )
+
+   * An Integrated Development Environment, with the usual features such as:
+      - A source code editor with auto-completion, syntax highlighting
+      - Management of application and library projects
+      - A visual debugger
+      - A Rapid Application Development form designer, based on
+        properties & methods 
+
+   * A run time library, providing a uniform API across platforms, featuring:
+      - A GUI toolkit (with a vast collection of powerful controls:
+        Buttons, Edit boxes, Drop/Combo boxes, Menus, Tabs,
+        Tree views/Grids/List boxes, file dialogs, ...)
+      - A 2D graphics API (bitmaps, fonts, international text, basic drawing)
+      - A 3D graphics API, supporting both Direct3D and OpenGL
+        (3DS file format support)
+      - A networking API which provide Sockets as well as a
+        distributed objects system for eC
+      - System functionality such as file access, multi-threading &
+        synchronization, handling date & time, etc.
+
+   * Additional libraries and code for more features, such as:
+      - The Ecere Data Access (EDA) layer, an abstract relational database
+        API, providing an active record system for eC. Currently it has
+        drivers for a minimal Ecere RDBMS and SQLite (as well as an encrypted
+        version using SQLiteCipher), and recently a basic Oracle driver was
+        introduced
+      - An audio library (supporting DirectSound on Windows and ALSA on Linux)
+      - WIA Scanning support on Windows
+      - SSL Sockets suport through OpenSSL
+      - A 2D tiled based game graphics engine (Tiled map, Sprites, A*)
+
+-----------------------------------------------------------------------------
+
+ * INSTALLATION *
+
+Please refer to the latest instructions at http://ecere.com/wiki/
+Windows binaries are available from that page.
+
+Daily-built Ubuntu Debian packages are available from our Ubuntu PPA:
+
+   https://code.launchpad.net/~ecere-team/+archive/ppa
+
+To build from source, simply type make (mingw32-make on Windows).
+
+It should build fine on Linux, on Windows with MinGW,
+and on Mac OS X with a bit of luck.
+
+To install, type make install (mingw32-make install on Windows).
+
+Please note that at this time eC and the Ecere SDK only support 32 bit.
+However, you should still be able to use the 32 bit version on a 64 bit machine.
+64-bit support is planned for the future.
+
+ * DOCUMENTATION *
+
+The Ecere Tao of Programming is a Programmer's Guide (still work in progress)
+that will teach you the foundations of eC and Ecere. You will find it under:
+
+Online: http://ecere.com/tao.pdf
+On Windows:
+      %PROGRAMFILES%\Ecere SDK\doc\Ecere Tao of Programming [work in progress].pdf
+On Linux/Unix: /usr/share/doc/tao.pdf
+
+Please check out the samples that come with the SDK:
+
+On Windows they get installed in %APPDATA%\Ecere SDK\Samples
+On Linux/Unix they get installed in /usr/share/ecere/samples/
+You can also find the latest versions on GitHub:
+
+   http://github.com/ecere/sdk/tree/master/samples
+   http://github.com/ecere/fractals
+   http://github.com/ecere/chess
+
+The Documentor is a tool under development to browse and document the APIs of
+eC modules. You can use it to browse all available classes, methods and properties
+of the Ecere runtime library. It is available from the Help menu in the IDE (F1).
+However, at the moment the tool itself is being improved, and so not much 
+descriptive info has been added yet.
+
+ * COMMUNITY *
+
+Git Repository @ http://github.com/ecere/sdk/  ( git://github.com/ecere/sdk.git )
+Support forums @ http://ecere.com/forums
+Bug tracker    @ http://ecere.com/mantis
+IRC            @ #ecere on irc.freenode.net
+                ( http://webchat.freenode.net/?channels=ecere )
