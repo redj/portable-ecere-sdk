@@ -1,1 +1,1 @@
-@start %~dp0bin\documentor.exe
+@start "" "%~dp0bin\documentor.exe"

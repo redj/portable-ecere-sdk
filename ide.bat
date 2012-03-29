@@ -1,1 +1,1 @@
-@start %~dp0bin\ide.exe
+@start "" "%~dp0bin\ide.exe"
